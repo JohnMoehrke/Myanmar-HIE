@@ -1,0 +1,865 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 117, errors = 50, warn = 9, info = 1 -->
+<head>
+  <title>IHEfooBarNameHere : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for IHEfooBarNameHere</h1>
+ <p>Generated Fri Jan 22 15:29:25 CST 2021, FHIR version 4.0.1 for example.fhir.uv.ihe-supplement#0.2.0 (canonical = <a href="http://ihe.net/fhir/uv/ihe-supplement">http://ihe.net/fhir/uv/ihe-supplement</a> (<a href="http://ihe.net/fhir/uv/ihe-supplement/history.html">history</a>)). See <a href="c:\users\john.moehrke\git\myanmar-hie\output\qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.56, which is out of date. The current version is v1.1.58 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = example.fhir.uv.ihe-supplement, Canonical = http://ihe.net/fhir/uv/ihe-supplement</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.2.0: <span stlye="color: marron; font-weight: bold">No entry in the package-list.json file for this version</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\john.moehrke\Git\Myanmar-HIE\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> example.fhir.uv.ihe-supplement</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://ihe.net/fhir/uv/ihe-supplement</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: ihe.fhir.template#current -&gt; fhir.base.template#current</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://ihe.net/fhir/uv/ihe-supplement (Problem #1 with package-list.json at http://ihe.net/fhir/uv/ihe-supplement: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 117, errors = 50, warn = 9, info = 1</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>125</b></td><td><b>9</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_Observation-ex-weight-stone"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\Observation-ex-weight-stone</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-BirthSex"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-BirthSex</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-IHE.FooBar.bloodPressure"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bloodPressure</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-IHE.FooBar.bodyWeight"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bodyWeight</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-MyanmarPatient"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-MyanmarPatient</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_ValueSet-ValuesetBirthsex"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ValuesetBirthsex</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_ValueSet-ihe-foobar-blood-pressure-positions"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ihe-foobar-blood-pressure-positions</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_input_ihe-myanmar"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\input\ihe-myanmar</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_input_resources_capabilitystatement-IHE.myProfile.client"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client</b></a></td><td><b>13</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_john.moehrke_Git_Myanmar-HIE_input_resources_capabilitystatement-IHE.myProfile.server"><b>C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server</b></a></td><td><b>13</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[23].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.id</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide Resource id should be example.fhir.uv.ihe-supplement</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Encounter/example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-IHE-FooBar-bloodPressure-0.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-IHE-FooBar-bloodPressure-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-weight-stone.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-weight-stone.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Observation/ex-weight.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ex-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Patient/9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Patient/ex-patient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ex-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BirthSex.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/ValuesetBirthsex.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ValuesetBirthsex.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="1_overview.html#97a315f9-ad50-45cf-9b6b-a843f4830e68">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 213, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: 26 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="1_overview.html#8b07f784-853f-48d3-a688-5d6bd20fa202">1_overview.html#/html/body/div/div/div/div/div/ul/li/ul/li/p/a at Line 216, column 13</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: 26 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="1_overview.html#c9d3b828-d275-4a62-abdc-7668cce3364f">1_overview.html#/html/body/div/div/div/p/a at Line 275, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="2_actors_and_transactions.html#06ef8128-c550-4b2d-9be0-eb360e447972">2_actors_and_transactions.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 337, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#ab_option' for &quot;Option AB&quot; cannot be resolved (valid targets: 26 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="2_actors_and_transactions.html#789841a7-a220-43d1-98a5-5c679a98d6e6">2_actors_and_transactions.html#/html/body/div/div/div/p/a at Line 382, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="3_security_considerations.html#8eccc728-df16-46d9-9f3f-d00f06505621">3_security_considerations.html#/html/body/div/div/div/div/div/p/a at Line 180, column 20</a></b></td><td><b>error</b></td><td><b>The link 'appendix_z.html#FHIRsecurity' for &quot;Appendix Z.8 “Mobile Security Considerations”&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="3_security_considerations.html#edf2604b-86d7-48cd-9d88-cd8f83921d52">3_security_considerations.html#/html/body/div/div/div/p/a at Line 291, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="4_grouping.html#28bb9107-bf88-454a-bb32-b06bd1db7d69">4_grouping.html#/html/body/div/div/div/p/a at Line 209, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="5_testplan.html#7e874cd3-30a2-472d-9384-e134b4f19eb5">5_testplan.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.client.change.history.html#d5ae521f-03f2-4ae0-9b84-73cdfcd97893">CapabilityStatement-IHE.myProfile.client.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.client.html#135b5818-42ec-489f-992e-2e6b433d5eeb">CapabilityStatement-IHE.myProfile.client.html#/html/body/div/div/div/p/a at Line 247, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.client.json.html#0d9e0919-9312-4bb2-a32d-87542405b35a">CapabilityStatement-IHE.myProfile.client.json.html#/html/body/div/div/div/p/a at Line 391, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.client.ttl.html#160ac4fd-fcc7-4371-b178-b5b0b7de22d6">CapabilityStatement-IHE.myProfile.client.ttl.html#/html/body/div/div/div/p/a at Line 405, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.client.xml.html#9ab6f627-629d-4bbf-9e5e-1e0e770e95b2">CapabilityStatement-IHE.myProfile.client.xml.html#/html/body/div/div/div/p/a at Line 387, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.server.change.history.html#72f6d363-93d5-4650-8f8c-5437d379e50c">CapabilityStatement-IHE.myProfile.server.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.server.html#c1dc7ee7-66b8-4a0a-8971-beb470792bd8">CapabilityStatement-IHE.myProfile.server.html#/html/body/div/div/div/p/a at Line 247, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.server.json.html#5581a424-0cc0-4627-83ee-264f2afb3a2d">CapabilityStatement-IHE.myProfile.server.json.html#/html/body/div/div/div/p/a at Line 391, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.server.ttl.html#ddaea768-5450-4211-bea3-616d78e25ac2">CapabilityStatement-IHE.myProfile.server.ttl.html#/html/body/div/div/div/p/a at Line 405, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CapabilityStatement-IHE.myProfile.server.xml.html#843bf3e0-8cc5-4329-af45-463293f172fb">CapabilityStatement-IHE.myProfile.server.xml.html#/html/body/div/div/div/p/a at Line 387, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.change.history.html#e0db7fa4-4e8a-436e-96f0-5c9be2881447">Encounter-example.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.html#785a30c3-fe39-472f-a5e0-9828b60424af">Encounter-example.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.json.html#e9f96c4b-942a-4dad-bff8-e1d637bae7a0">Encounter-example.json.html#/html/body/div/div/div/p/a at Line 263, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.ttl.html#24a4340d-5160-4833-8a79-1bb3a931c51a">Encounter-example.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Encounter-example.xml.html#91e5b27e-46ff-40b9-bef2-044da7e711d4">Encounter-example.xml.html#/html/body/div/div/div/p/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-IHE-FooBar-bloodPressure-0.change.history.html#40369842-a7a3-4939-b552-aec837e1ea85">Observation-ex-IHE-FooBar-bloodPressure-0.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-IHE-FooBar-bloodPressure-0.html#e0f1d54b-7ca6-4b13-b40a-1286f339a735">Observation-ex-IHE-FooBar-bloodPressure-0.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-IHE-FooBar-bloodPressure-0.json.html#f7697705-1a46-47f4-9a68-d93eec45cc00">Observation-ex-IHE-FooBar-bloodPressure-0.json.html#/html/body/div/div/div/p/a at Line 327, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-IHE-FooBar-bloodPressure-0.ttl.html#2b90c7c3-f764-4d5b-b8e2-fd5f1154b22d">Observation-ex-IHE-FooBar-bloodPressure-0.ttl.html#/html/body/div/div/div/p/a at Line 329, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-IHE-FooBar-bloodPressure-0.xml.html#40e08748-d948-4882-bffd-50c6cfea752f">Observation-ex-IHE-FooBar-bloodPressure-0.xml.html#/html/body/div/div/div/p/a at Line 310, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight-stone.change.history.html#debee87c-a3fb-4df4-bd3e-d3f02ce0b9f0">Observation-ex-weight-stone.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight-stone.html#4d68715d-3c3d-4ae4-a886-6ae631de423d">Observation-ex-weight-stone.html#/html/body/div/div/div/div/div/div/p/a at Line 212, column 653</a></b></td><td><b>error</b></td><td><b>The link 'Encounter/ex-encounter' for &quot;Encounter/ex-encounter&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight-stone.html#88894a6e-cabd-4088-8902-79e198678c12">Observation-ex-weight-stone.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight-stone.json.html#f05833f7-e6f2-4384-a424-fb681c1c0a95">Observation-ex-weight-stone.json.html#/html/body/div/div/div/p/a at Line 305, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight-stone.ttl.html#66b2a435-0079-4884-8cf7-403e6c7aef19">Observation-ex-weight-stone.ttl.html#/html/body/div/div/div/p/a at Line 313, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight-stone.xml.html#c9e920aa-2861-4dab-999c-6a157fa057e5">Observation-ex-weight-stone.xml.html#/html/body/div/div/div/p/a at Line 295, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight.change.history.html#66f884e7-8a18-4b51-b1f3-982cf8dd39ed">Observation-ex-weight.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight.html#78e07937-16c9-423c-8d43-f8def0f073c3">Observation-ex-weight.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight.json.html#303de56c-63f7-48bb-854d-c7b6459a6165">Observation-ex-weight.json.html#/html/body/div/div/div/p/a at Line 291, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight.ttl.html#6f21cdc9-7fa9-45be-b346-2d251c679517">Observation-ex-weight.ttl.html#/html/body/div/div/div/p/a at Line 300, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Observation-ex-weight.xml.html#66f3fbc4-2eda-46c1-a8ec-dd5be4dd36d3">Observation-ex-weight.xml.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.change.history.html#ab7e0e6b-b273-42b8-9820-24df3dc7fc64">Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.html#540b5dd2-96b4-4c8c-a656-80ebfea9b7cb">Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.json.html#70bfb69b-41ff-42af-b7d3-137129429b32">Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.json.html#/html/body/div/div/div/p/a at Line 323, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.ttl.html#014d5a1a-055d-42f3-a693-2f738f176e0a">Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.ttl.html#/html/body/div/div/div/p/a at Line 335, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.xml.html#49e4544c-7f4f-4892-a774-3f16f0c1cad8">Patient-9b284fd5-b7a8-4cc8-bc1c-bc5563d698b0.xml.html#/html/body/div/div/div/p/a at Line 303, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ex-patient.change.history.html#f584e45b-d564-4cd9-b658-167de9ce1e65">Patient-ex-patient.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ex-patient.html#8217e379-e9f5-4c96-933a-81f6cf309417">Patient-ex-patient.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ex-patient.json.html#0c423c74-dac5-432f-b8c7-5d8ce7158fbf">Patient-ex-patient.json.html#/html/body/div/div/div/p/a at Line 297, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ex-patient.ttl.html#67bdf414-f5ea-4c62-8bdb-f48c6342bc5c">Patient-ex-patient.ttl.html#/html/body/div/div/div/p/a at Line 310, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ex-patient.xml.html#131f0ffd-261b-42b7-bb51-4ffa81601f5f">Patient-ex-patient.xml.html#/html/body/div/div/div/p/a at Line 285, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BirthSex-definitions.html#cc769e8e-407b-43cb-b50b-c5c3e72b07e4">StructureDefinition-BirthSex-definitions.html#/html/body/div/div/div/p/a at Line 331, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BirthSex-mappings.html#71f8b467-56e6-403c-923d-31295ff57249">StructureDefinition-BirthSex-mappings.html#/html/body/div/div/div/p/a at Line 291, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BirthSex.html#a687988b-0a84-4171-b07a-368068403c81">StructureDefinition-BirthSex.html#/html/body/div/div/div/p/a at Line 547, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BirthSex.profile.history.html#78886dea-e8c6-4f2a-b6b5-4f9e79448ff6">StructureDefinition-BirthSex.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BirthSex.profile.json.html#f455e3d0-c355-41dc-8321-32a6a539fc9a">StructureDefinition-BirthSex.profile.json.html#/html/body/div/div/div/p/a at Line 638, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BirthSex.profile.ttl.html#2e5f792a-da9b-4812-b913-619735e2244a">StructureDefinition-BirthSex.profile.ttl.html#/html/body/div/div/div/p/a at Line 599, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-BirthSex.profile.xml.html#8cefe9c2-4115-4785-b770-db23ecd2a653">StructureDefinition-BirthSex.profile.xml.html#/html/body/div/div/div/p/a at Line 583, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure-definitions.html#55493db1-dccc-46f3-80dd-fd0c490a510d">StructureDefinition-IHE.FooBar.bloodPressure-definitions.html#/html/body/div/div/div/p/a at Line 1772, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure-examples.html#262e6420-5ed4-49d0-a744-eb66c4e69f11">StructureDefinition-IHE.FooBar.bloodPressure-examples.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure-mappings.html#6ec73f62-9a0b-4fbd-9cfa-05606663fa48">StructureDefinition-IHE.FooBar.bloodPressure-mappings.html#/html/body/div/div/div/p/a at Line 577, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#b3d13418-43c6-4050-a747-367ab124a89b">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 502, column 1557</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#8c9b74da-b05e-46c1-b7b0-7df111d4086a">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 532, column 1568</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#4f7348f9-85a4-4f16-9db2-40dd986afc94">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 562, column 1567</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#e2415672-331e-41d1-b5ee-ee07f98e663c">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 592, column 1566</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#880f9cfb-dbb1-49cb-bb2d-71ed29471098">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 615, column 1563</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#80b786f0-b50a-4c64-9d23-77e2c101290e">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 638, column 1576</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#f2ac3a32-49cf-4fd6-bbfd-e11777593989">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 661, column 1562</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#8666da20-f791-4fd6-b0ac-21b4add88658">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 684, column 1568</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#e4115cc8-f90a-4160-bc38-079f6ad9d4ea">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1045, column 1557</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#5ec5ba20-2fb6-4058-ad47-573357b97412">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1075, column 1568</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#120a6317-9912-4892-a498-2237f8f276ca">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1105, column 1567</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#e349b6e1-7dfd-4f66-bdaf-ba7bbdddc156">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1135, column 1566</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#3227dc84-653a-4771-91b2-b71b0acbd3f7">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1158, column 1563</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#16fefc54-e314-4c1b-b50f-a029494fcaa0">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1181, column 1576</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#2721e240-ad64-4370-b6b8-c02f442ecc6e">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1204, column 1562</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#7cd22536-df96-48d8-90dd-36ee5e929438">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1227, column 1568</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.html#d84d43b0-a28b-4b2e-9106-78c68a689eca">StructureDefinition-IHE.FooBar.bloodPressure.html#/html/body/div/div/div/p/a at Line 1604, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.profile.history.html#79ac443f-1464-4088-aae8-a0a9c699ff66">StructureDefinition-IHE.FooBar.bloodPressure.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.profile.json.html#e7bfc8d3-f242-40bf-b876-974413e510c3">StructureDefinition-IHE.FooBar.bloodPressure.profile.json.html#/html/body/div/div/div/p/a at Line 7539, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.profile.ttl.html#77814454-48df-48b8-9c41-198b097a68e8">StructureDefinition-IHE.FooBar.bloodPressure.profile.ttl.html#/html/body/div/div/div/p/a at Line 6479, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bloodPressure.profile.xml.html#aaa72a70-755e-4700-8a03-0d1f04fead35">StructureDefinition-IHE.FooBar.bloodPressure.profile.xml.html#/html/body/div/div/div/p/a at Line 6907, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight-definitions.html#8768ece2-d126-4910-bf80-52a75d81028f">StructureDefinition-IHE.FooBar.bodyWeight-definitions.html#/html/body/div/div/div/p/a at Line 839, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight-examples.html#690ef10a-3893-466c-9855-b65ad6512040">StructureDefinition-IHE.FooBar.bodyWeight-examples.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight-mappings.html#c8d104ef-d43c-4314-b729-e95f2378d946">StructureDefinition-IHE.FooBar.bodyWeight-mappings.html#/html/body/div/div/div/p/a at Line 343, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight.html#33bf65ac-671a-40d2-b261-0e12e88d9686">StructureDefinition-IHE.FooBar.bodyWeight.html#/html/body/div/div/div/p/a at Line 740, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight.profile.history.html#cc26f251-463e-4cc3-b3fd-4b5bbf507c43">StructureDefinition-IHE.FooBar.bodyWeight.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight.profile.json.html#95101cbf-3d24-4bec-aa07-28e79f209855">StructureDefinition-IHE.FooBar.bodyWeight.profile.json.html#/html/body/div/div/div/p/a at Line 3211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight.profile.ttl.html#4d62a4ea-fb74-4f86-9c49-fb8713d85874">StructureDefinition-IHE.FooBar.bodyWeight.profile.ttl.html#/html/body/div/div/div/p/a at Line 2847, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-IHE.FooBar.bodyWeight.profile.xml.html#88c5f7cb-c234-483b-be9a-57e1276d3ab3">StructureDefinition-IHE.FooBar.bodyWeight.profile.xml.html#/html/body/div/div/div/p/a at Line 2952, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient-definitions.html#d24ae7de-57d0-45e7-94eb-3eab027d4611">StructureDefinition-MyanmarPatient-definitions.html#/html/body/div/div/div/p/a at Line 769, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient-examples.html#f19b5515-c4d9-46a7-a728-cabcd34ed92e">StructureDefinition-MyanmarPatient-examples.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient-mappings.html#01c350ec-61f4-4caa-8bb7-9f79b9081423">StructureDefinition-MyanmarPatient-mappings.html#/html/body/div/div/div/p/a at Line 396, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient.html#214b90d6-cc35-49fe-8868-b6b7d47a0808">StructureDefinition-MyanmarPatient.html#/html/body/div/div/div/p/a at Line 811, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient.profile.history.html#01b6c4e5-b733-437e-affb-494297e3cb5d">StructureDefinition-MyanmarPatient.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient.profile.json.html#c86b86db-ab52-4016-b276-4fc95570d848">StructureDefinition-MyanmarPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2546, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient.profile.ttl.html#5e4d544d-4353-4ae4-87f3-6c3ea3fb0bdc">StructureDefinition-MyanmarPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-MyanmarPatient.profile.xml.html#656d0f44-3f55-4203-a218-5b3a2b9d0f00">StructureDefinition-MyanmarPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2352, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ValuesetBirthsex.change.history.html#1727dfe9-56a0-4875-9735-d39bd54d89d8">ValueSet-ValuesetBirthsex.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ValuesetBirthsex.html#281d3921-54a4-4ad7-bd32-248f3538c644">ValueSet-ValuesetBirthsex.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ValuesetBirthsex.json.html#a4ce3ff4-20a5-41f9-9736-a017a8f8c0f8">ValueSet-ValuesetBirthsex.json.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ValuesetBirthsex.ttl.html#f5c4537f-6515-4c72-82fc-c1d09253a274">ValueSet-ValuesetBirthsex.ttl.html#/html/body/div/div/div/p/a at Line 286, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ValuesetBirthsex.xml.html#43d9a5d6-f366-44ab-8f5b-5e7695871760">ValueSet-ValuesetBirthsex.xml.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ihe-foobar-blood-pressure-positions.change.history.html#58e32c81-7aaf-4888-98d7-50387cfa8960">ValueSet-ihe-foobar-blood-pressure-positions.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ihe-foobar-blood-pressure-positions.html#d08af4f7-e3e8-465d-94a6-b1ba23bf39fb">ValueSet-ihe-foobar-blood-pressure-positions.html#/html/body/div/div/div/p/a at Line 298, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ihe-foobar-blood-pressure-positions.json.html#b0201dcf-267f-431e-84c5-1182b835d8c2">ValueSet-ihe-foobar-blood-pressure-positions.json.html#/html/body/div/div/div/p/a at Line 300, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ihe-foobar-blood-pressure-positions.ttl.html#fcb74f80-df06-4bb8-bde1-8a5579460d11">ValueSet-ihe-foobar-blood-pressure-positions.ttl.html#/html/body/div/div/div/p/a at Line 301, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ihe-foobar-blood-pressure-positions.xml.html#08413d55-7f81-4481-a5a2-f6632b926a7b">ValueSet-ihe-foobar-blood-pressure-positions.xml.html#/html/body/div/div/div/p/a at Line 290, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="a_issues.html#5e9eae35-9f2e-4b9a-85c5-6fd360459977">a_issues.html#/html/body/div/div/div/p/a at Line 216, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#d5918515-521b-4cd8-983f-3c339ac275fd">artifacts.html#/html/body/div/div/div/p/a at Line 403, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#58a2f3ab-bd7a-4f72-b69a-e6a5050f7db6">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 207, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#client' for &quot;Client&quot; cannot be resolved (valid targets: 26 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#ac77803f-268c-46dd-83d8-c4b7af39a1cf">domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 211, column 12</a></b></td><td><b>error</b></td><td><b>The link '2_actors_and_transactions.html#server' for &quot;Server&quot; cannot be resolved (valid targets: 26 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#c3b9c713-c23c-45f7-9c0a-f758667b942a">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Client.html' for &quot;Client&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#2a96bbef-7d08-4de3-98b2-6bfff282bfe6">domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 45</a></b></td><td><b>error</b></td><td><b>The link 'IHE.FooBar.Server.html' for &quot;Client&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="domain-Y.html#d20ede00-5014-4cfe-9add-5490e2003e46">domain-Y.html#/html/body/div/div/div/p/a at Line 307, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#feeda7c5-3395-4d4d-88f2-9c9b868fdb83">index.html#/html/body/div/div/div/div/div/p/strong/a at Line 181, column 189</a></b></td><td><b>error</b></td><td><b>The link 'suppl_template.html' for &quot;Supplement Template&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#458129db-91b9-416a-86d5-bc65ecfdc4fb">index.html#/html/body/div/div/div/p/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#68c6f7cc-b6c5-476f-a066-827b13206b1d">toc.html#/html/body/div/div/div/p/a at Line 188, column 28</a></b></td><td><b>error</b></td><td><b>The link 'some url' for &quot;IHE International - [Some] domain Group&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_Observation-ex-weight-stone"> </a>
+<h2><a href="Observation-ex-weight-stone.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\Observation-ex-weight-stone.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/ex-weight-stone: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation/ex-weight-stone: Observation.code.coding[3] (l38/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation/ex-weight-stone: Observation.encounter (l50/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Encounter/ex-encounter'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-BirthSex"> </a>
+<h2><a href="StructureDefinition-BirthSex.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-BirthSex.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/myanmar/StructureDefinition/BirthSex')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-BirthSex.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/BirthSex) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/BirthSex)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/BirthSex: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-BirthSex</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/BirthSex vs https://profiles.ihe.net/myanmar/StructureDefinition/BirthSex</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-IHE.FooBar.bloodPressure"> </a>
+<h2><a href="StructureDefinition-IHE.FooBar.bloodPressure.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bloodPressure.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bloodPressure')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bloodPressure.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/IHE.FooBar.bloodPressure) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bloodPressure)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.FooBar.bloodPressure: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bloodPressure</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/IHE.FooBar.bloodPressure vs https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bloodPressure</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-IHE.FooBar.bodyWeight"> </a>
+<h2><a href="StructureDefinition-IHE.FooBar.bodyWeight.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bodyWeight.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bodyWeight')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bodyWeight.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/IHE.FooBar.bodyWeight) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bodyWeight)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/IHE.FooBar.bodyWeight: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bodyWeight</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/IHE.FooBar.bodyWeight vs https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bodyWeight</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_StructureDefinition-MyanmarPatient"> </a>
+<h2><a href="StructureDefinition-MyanmarPatient.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-MyanmarPatient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://profiles.ihe.net/myanmar/StructureDefinition/MyanmarPatient')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-MyanmarPatient.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/MyanmarPatient) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/MyanmarPatient)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/MyanmarPatient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-MyanmarPatient</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/MyanmarPatient vs https://profiles.ihe.net/myanmar/StructureDefinition/MyanmarPatient</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_ValueSet-ValuesetBirthsex"> </a>
+<h2><a href="ValueSet-ValuesetBirthsex.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ValuesetBirthsex.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.where(url = 'https://profiles.ihe.net/myanmar/ValueSet/ValuesetBirthsex')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ValuesetBirthsex.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/ValueSet/ValuesetBirthsex) does not match the URL (https://profiles.ihe.net/myanmar/ValueSet/ValuesetBirthsex)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/ValuesetBirthsex: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ValuesetBirthsex</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/ValueSet/ValuesetBirthsex vs https://profiles.ihe.net/myanmar/ValueSet/ValuesetBirthsex</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_fsh-generated_resources_ValueSet-ihe-foobar-blood-pressure-positions"> </a>
+<h2><a href="ValueSet-ihe-foobar-blood-pressure-positions.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ihe-foobar-blood-pressure-positions.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.where(url = 'https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ihe-foobar-blood-pressure-positions.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/ValueSet/ihe-foobar-blood-pressure-positions) does not match the URL (https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/ihe-foobar-blood-pressure-positions: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ihe-foobar-blood-pressure-positions</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/ValueSet/ihe-foobar-blood-pressure-positions vs https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_input_ihe-myanmar"> </a>
+<h2><a href="ImplementationGuide-ihe.mm.myanmar.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\ihe-myanmar.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.where(url = 'http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.uv.ihe-supplement')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\input\ihe-myanmar.xml - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.mm.myanmar) does not match the URL (http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.uv.ihe-supplement)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: ihe.mm.myanmar/http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.uv.ihe-supplement</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/ihe.mm.myanmar: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\input\ihe-myanmar</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.mm.myanmar vs http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.uv.ihe-supplement</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_input_resources_capabilitystatement-IHE.myProfile.client"> </a>
+<h2><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement.where(url = 'http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.client')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/CapabilityStatement/IHE.myProfile.client) does not match the URL (http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.client)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[0].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_id' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[2].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-city' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[3].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-country' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[4].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-postalcode' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[5].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-state' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[6].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-birthdate' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[7].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-family' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[8].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-gender' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[9].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-given' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[11].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-telecom' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.client: CapabilityStatement.rest[0].resource[0].searchParam[12].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_lastUpdated' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/CapabilityStatement/IHE.myProfile.client vs http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.client</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_john.moehrke_Git_Myanmar-HIE_input_resources_capabilitystatement-IHE.myProfile.server"> </a>
+<h2><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement.where(url = 'http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.server')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/CapabilityStatement/IHE.myProfile.server) does not match the URL (http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.server)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CapabilityStatement</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[0].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_id' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[2].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-city' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[3].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-country' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[4].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-postalcode' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[5].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-state' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[6].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-birthdate' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[7].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-family' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[8].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-gender' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[9].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-given' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[11].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-telecom' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CapabilityStatement/IHE.myProfile.server: CapabilityStatement.rest[0].resource[0].searchParam[12].definition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_lastUpdated' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://ihe.net/fhir/uv/ihe-supplement/CapabilityStatement/IHE.myProfile.server vs http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.server</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>?pub-msg-2?</b></p><ul>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/somepatientprofile: Profiles SHOULD state their own version</li>
+ <li>WARNING: http://hl7.org/fhir/uv/myig/StructureDefinition/ext-myExtension: Profiles SHOULD state their own version</li>
+ <li>// (And include comments like this justifying why)</li>
+ <li>// We define the version on a global basis, so don't need it on the individual source definitions</li>
+ <li>// Add warning and/or information messages here after you've confirmed that they aren't really a problem</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-BirthSex.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-BirthSex.json</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-BirthSex.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/BirthSex) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/BirthSex)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.FooBar.bloodPressure.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bloodPressure.json</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bloodPressure.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/IHE.FooBar.bloodPressure) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bloodPressure)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-IHE.FooBar.bodyWeight.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bodyWeight.json</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-IHE.FooBar.bodyWeight.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/IHE.FooBar.bodyWeight) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bodyWeight)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-MyanmarPatient.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-MyanmarPatient.json</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\StructureDefinition-MyanmarPatient.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/StructureDefinition/MyanmarPatient) does not match the URL (https://profiles.ihe.net/myanmar/StructureDefinition/MyanmarPatient)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-ValuesetBirthsex.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ValuesetBirthsex.json</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ValuesetBirthsex.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/ValueSet/ValuesetBirthsex) does not match the URL (https://profiles.ihe.net/myanmar/ValueSet/ValuesetBirthsex)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-ihe-foobar-blood-pressure-positions.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ihe-foobar-blood-pressure-positions.json</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\ValueSet-ihe-foobar-blood-pressure-positions.json - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/ValueSet/ihe-foobar-blood-pressure-positions) does not match the URL (https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-ihe.mm.myanmar.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\ihe-myanmar.xml</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\input\ihe-myanmar.xml - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.mm.myanmar) does not match the URL (http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.uv.ihe-supplement)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/CapabilityStatement/IHE.myProfile.client) does not match the URL (http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.client)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Conformance resource C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml - the canonical URL (http://ihe.net/fhir/uv/ihe-supplement/CapabilityStatement/IHE.myProfile.server) does not match the URL (http://ihe.net/fhir/CapabilityStatement/capabilitystatement-IHE.myProfile.server)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-ihe.mm.myanmar.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\ihe-myanmar.xml</a></td><td><b>Resource id/url mismatch: ihe.mm.myanmar/http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.uv.ihe-supplement</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-ex-weight-stone.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\Observation-ex-weight-stone.json</a></td><td><b>Unable to resolve resource 'Encounter/ex-encounter'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_id' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-city' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-country' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-postalcode' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-state' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-birthdate' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-family' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-gender' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-given' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-telecom' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.client.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.client.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_lastUpdated' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_id' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-city' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-country' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-postalcode' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-address-state' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-birthdate' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-family' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-gender' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-given' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-telecom' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CapabilityStatement-IHE.myProfile.server.html">C:\Users\john.moehrke\Git\Myanmar-HIE\input\resources\capabilitystatement-IHE.myProfile.server.xml</a></td><td><b>Canonical URL 'http://hl7.org/fhir/SearchParameter/Patient-_lastUpdated' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-ex-weight-stone.html">C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\Observation-ex-weight-stone.json</a></td><td><b>Code System URI 'http://acme.org/devices/clinical-codes' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

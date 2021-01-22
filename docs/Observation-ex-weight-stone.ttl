@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ihe.net/fhir/uv/ihe-supplement/Observation/ex-weight-stone> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ex-weight-stone"];
+  fhir:Resource.meta [
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ];
+       fhir:Coding.code [ fhir:value "HTEST" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}, {http://loinc.org 3141-9}, {http://snomed.info/sct 27113001}, {http://acme.org/devices/clinical-codes body-weight}\">body weight</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith , John Jacob Jingle Heimer Schnidt (OLD), John Jacob Jingleheimer Smith (OFFICIAL); gender: other; birthDate: 1923-07-25</a></p><p><b>encounter</b>: <a href=\"Encounter/ex-encounter\">Encounter/ex-encounter</a></p><p><b>effective</b>: 2016-03-28</p><p><b>value</b>: 20 [stone_av]</p><p><b>note</b>: a bit heavy, about 280 lbs</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ]
+     ], [
+       fhir:index 1;
+       a loinc:3141-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "3141-9" ]
+     ], [
+       fhir:index 2;
+       a sct:27113001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "27113001" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://acme.org/devices/clinical-codes" ];
+       fhir:Coding.code [ fhir:value "body-weight" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "body weight" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://ihe.net/fhir/uv/ihe-supplement/Patient/ex-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/ex-patient" ]
+  ];
+  fhir:Observation.encounter [
+     fhir:link <http://ihe.net/fhir/uv/ihe-supplement/Encounter/ex-encounter>;
+     fhir:Reference.reference [ fhir:value "Encounter/ex-encounter" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2016-03-28"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "[stone_av]" ]
+  ];
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "a bit heavy, about 280 lbs" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ihe.net/fhir/uv/ihe-supplement/Observation/ex-weight-stone.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

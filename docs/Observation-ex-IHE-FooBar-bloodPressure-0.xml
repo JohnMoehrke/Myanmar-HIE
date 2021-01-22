@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ex-IHE-FooBar-bloodPressure-0"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bloodPressure"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 55284-4}, {http://loinc.org 8716-3}">Blood pressure systolic and diastolic</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith , John Jacob Jingle Heimer Schnidt (OLD), John Jacob Jingleheimer Smith (OFFICIAL); gender: other; birthDate: 1923-07-25</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>note</b>: a minimal blood pressure</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8480-6}">Systolic blood pressure</span></p><p><b>value</b>: 140 mm[Hg]</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8462-4}">Diastolic blood pressure</span></p><p><b>value</b>: 90 mm[Hg]</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55284-4"/>
+      <display value="Blood pressure systolic and diastolic"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8716-3"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ex-patient"/>
+  </subject>
+  <effectiveDateTime value="2004-12-25T23:50:50-05:00"/>
+  <note>
+    <text value="a minimal blood pressure"/>
+  </note>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="140"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="90"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+</Observation>
