@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="afbff044-5afa-4941-aa31-11ec07a551e8"/>
+  <meta>
+    <lastUpdated value="2021-01-22T15:27:52.165-06:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions"/>
+    <resource>
+      <ValueSet>
+        <id value="ihe-foobar-blood-pressure-positions"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 4 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.68</p>
+            <p>All codes from system 
+              <code>http://loinc.org</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-69000-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/69000-8.html">69000-8</a>
+                </td>
+                <td>Heart rate - sitting</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-69001-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/69001-6.html">69001-6</a>
+                </td>
+                <td>Heart rate - standing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-68999-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/68999-2.html">68999-2</a>
+                </td>
+                <td>Heart rate - supine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-40443-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/40443-4.html">40443-4</a>
+                </td>
+                <td>Heart rate - resting</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions"/>
+        <version value="0.2.0"/>
+        <name value="IheFooBarBloodPressurePositions"/>
+        <title value="The methods of measurement for blood pressure"/>
+        <status value="active"/>
+        <date value="2021-01-22T15:27:52-06:00"/>
+        <publisher value="IHE International - [Some] domain Group"/>
+        <contact>
+          <telecom>
+            <system value="other"/>
+            <value value="some url"/>
+          </telecom>
+        </contact>
+        <description value="These are the loinc body positions that IHE FooBar supports on blood pressure."/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:bfc6cb72-b4e8-4ab4-b1b2-c360600b5091"/>
+          <timestamp value="2021-01-22T15:28:35-06:00"/>
+          <total value="4"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://loinc.org|2.68"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="69000-8"/>
+            <display value="Heart rate - sitting"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="69001-6"/>
+            <display value="Heart rate - standing"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="68999-2"/>
+            <display value="Heart rate - supine"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="40443-4"/>
+            <display value="Heart rate - resting"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://profiles.ihe.net/myanmar/ValueSet/ValuesetBirthsex"/>
+    <resource>
+      <ValueSet>
+        <id value="ValuesetBirthsex"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-AdministrativeGender.html">AdministrativeGender v2.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-AdministrativeGender.html">
+                <code>http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-AdministrativeGender-F"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-AdministrativeGender.html#v3-AdministrativeGender-F">F</a>
+                </td>
+                <td>Female</td>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-AdministrativeGender-M"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-AdministrativeGender.html#v3-AdministrativeGender-M">M</a>
+                </td>
+                <td>Male</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-AdministrativeGender-UN"> </a>
+                  <a href="https://terminology.hl7.org/1.0.0//CodeSystem-v3-AdministrativeGender.html#v3-AdministrativeGender-UN">UN</a>
+                </td>
+                <td>Undifferentiated</td>
+                <td>En: The gender of a person could not be uniquely defined as male or female, such as intersex. Nl: Het geslacht van een persoon kan niet uniek worden gedefinieerd als man of vrouw, zoals een intersekse-conditie.
+
+*Open Issue:* This is a short-term stopgap solution to the definition issue, full solutions are being worked out by the Gender Harmony project launched in 2019.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://profiles.ihe.net/myanmar/ValueSet/ValuesetBirthsex"/>
+        <version value="0.2.0"/>
+        <name value="ValuesetBirthsex"/>
+        <status value="active"/>
+        <date value="2021-01-22T15:27:52-06:00"/>
+        <publisher value="IHE International - [Some] domain Group"/>
+        <contact>
+          <telecom>
+            <system value="other"/>
+            <value value="some url"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f5b1a8e7-f46e-46d7-a913-ac9c3117ce54"/>
+          <timestamp value="2021-01-22T15:28:36-06:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+            <code value="F"/>
+            <display value="Female"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+            <code value="M"/>
+            <display value="Male"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+            <code value="UN"/>
+            <display value="Undifferentiated"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

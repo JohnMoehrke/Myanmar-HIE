@@ -1,0 +1,12 @@
+{
+  "url": "http://ihe.net/fhir/uv/ihe-supplement/ImplementationGuide/ihe.uv.ihe-supplement",
+  "name": "IHEfooBarNameHere",
+  "package-id": "example.fhir.uv.ihe-supplement",
+  "ig-ver": "0.2.0",
+  "date": "Fri, 22 Jan, 2021 15:27:52 -0600",
+  "errs": 50,
+  "warnings": 9,
+  "hints": 1,
+  "version": "4.0.1",
+  "tool": "4.5.0 (3)"
+}

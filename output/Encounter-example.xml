@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="example"/>
+  <meta>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: finished</p><p><b>class</b>: <span title="{http://terminology.hl7.org/CodeSystem/v3-ActCode HH}">home health</span></p><p><b>subject</b>: <a href="Patient-ex-patient.html">Generated Summary: Jack Smith , John Jacob Jingle Heimer Schnidt (OLD), John Jacob Jingleheimer Smith (OFFICIAL); gender: other; birthDate: 1923-07-25</a></p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="HH"/>
+  </class>
+  <subject>
+    <reference value="Patient/ex-patient"/>
+  </subject>
+</Encounter>

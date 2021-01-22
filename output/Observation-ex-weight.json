@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "ex-weight",
+  "meta": {
+    "profile": [
+      "https://profiles.ihe.net/myanmar/StructureDefinition/IHE.FooBar.bodyWeight"
+    ],
+    "security": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code": "HTEST"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 29463-7}\">Body weight</span></p><p><b>subject</b>: <a href=\"Patient-ex-patient.html\">Generated Summary: Jack Smith , John Jacob Jingle Heimer Schnidt (OLD), John Jacob Jingleheimer Smith (OFFICIAL); gender: other; birthDate: 1923-07-25</a></p><p><b>effective</b>: Dec 25, 2004 10:50:50 PM</p><p><b>value</b>: 185 [lb_av]</p><p><b>note</b>: a bit heavy</p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ex-patient"
+  },
+  "effectiveDateTime": "2004-12-25T23:50:50-05:00",
+  "valueQuantity": {
+    "value": 185,
+    "system": "http://unitsofmeasure.org",
+    "code": "[lb_av]"
+  },
+  "note": [
+    {
+      "text": "a bit heavy"
+    }
+  ]
+}
