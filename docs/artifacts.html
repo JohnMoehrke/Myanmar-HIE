@@ -268,7 +268,18 @@ As a mandatory CR behaviour, the patient.id shall be a globally unique ID (GUID)
 
 In cases where a unique ID is established for an individual but no ID card is issued at the time of establishing the ID, the patient.id (the GUID) shall be persisted as the patient.identifier. This temporary patient.identifier shall be overwritten by the MOH-issued unique ID at the time a card is issued to the individual. This behaviour is intended to support situations where persons need to be set up with a unique ID but where it is not possible to issue them a card at the time their demographic record is created. 
 
-The CR shall also maintain and persist any and all locally-assigned IDs in the patient.identifier element (e.g. a locally unique medical records number created by a care facility). In these cases, the assigning authority shall be identified using the MOH-assigned care delivery organization’s org ID. These org IDs shall match valid organization.id records (see ILR-FR, below).</p>
+The CR shall also maintain and persist any and all locally-assigned IDs in the patient.identifier element (e.g. a locally unique medical records number created by a care facility). In these cases, the assigning authority shall be identified using the MOH-assigned care delivery organization’s org ID. These org IDs shall match valid organization.id records (see ILR-FR, below).  
+
+TODO: not yet based on IPS flavor of Patient
+
+TODO: place of birth does have a FHIR core extension we could use extension-patient-birthplace
+
+TODO: sex at birth is not appropriate in .gender. There is not a known extension. So could create an extension here for regional use
+
+TODO patient’s mother’s full legal name – there is an extension that could have been used http://hl7.org/fhir/extension-patient-mothersmaidenname.html
+but the text indicates that patient.link.other is used and that it points at a RelatedPerson. Given that RelatedPerson is not part of PMIR, the addition of RelatedPerson would be an extension on PMIR.  so unclear direction should go.
+
+TODO: do not have a slice constraint forcing the MOH identifier</p>
 </td>
             </tr>
          </tbody>
@@ -382,8 +393,8 @@ The CR shall also maintain and persist any and all locally-assigned IDs in the p
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="d5918515-521b-4cd8-983f-3c339ac275fd">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="some url">IHE International - [Some] domain Group</a>.  Package example.fhir.uv.ihe-supplement#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 22, 2021 15:27-0600">2021-01-22</span>
+        <p><a name="a585ec15-1827-4167-b5dc-f4b0067d8a80">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="some url">IHE International - [Some] domain Group</a>.  Package example.fhir.uv.ihe-supplement#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 26, 2021 12:03-0600">2021-01-26</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

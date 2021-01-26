@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BirthSex"];
   fhir:StructureDefinition.title [ fhir:value "The patient sex at birth"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-22T15:27:52-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-01-26T12:03:47-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "IHE International - [Some] domain Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

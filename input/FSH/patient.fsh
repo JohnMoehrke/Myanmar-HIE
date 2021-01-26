@@ -19,6 +19,17 @@ In cases where a unique ID is established for an individual but no ID card is is
 
 The CR shall also maintain and persist any and all locally-assigned IDs in the patient.identifier element (e.g. a locally unique medical records number created by a care facility). In these cases, the assigning authority shall be identified using the MOH-assigned care delivery organization’s org ID. These org IDs shall match valid organization.id records (see ILR-FR, below).  
 
+TODO: not yet based on IPS flavor of Patient
+
+TODO: place of birth does have a FHIR core extension we could use extension-patient-birthplace
+
+TODO: sex at birth is not appropriate in .gender. There is not a known extension. So could create an extension here for regional use
+
+TODO patient's mother's full legal name -- there is an extension that could have been used http://hl7.org/fhir/extension-patient-mothersmaidenname.html
+but the text indicates that patient.link.other is used and that it points at a RelatedPerson. Given that RelatedPerson is not part of PMIR, the addition of RelatedPerson would be an extension on PMIR.  so unclear direction should go.
+
+TODO: do not have a slice constraint forcing the MOH identifier 
+
 "
 // TODO place of birth is not part of core Patient, but there is an extension available for it
 // http://hl7.org/fhir/extension-patient-birthplace.html

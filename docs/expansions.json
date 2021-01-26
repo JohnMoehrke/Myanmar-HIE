@@ -1,48 +1,22 @@
 {
   "resourceType" : "Bundle",
-  "id" : "afbff044-5afa-4941-aa31-11ec07a551e8",
+  "id" : "b43c4ce2-24b5-4a85-906d-c53ea1b20a05",
   "meta" : {
-    "lastUpdated" : "2021-01-22T15:27:52.165-06:00"
+    "lastUpdated" : "2021-01-26T12:03:47.361-06:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "ihe-foobar-blood-pressure-positions",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.68</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69000-8\"> </a><a href=\"http://details.loinc.org/LOINC/69000-8.html\">69000-8</a></td><td>Heart rate - sitting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-69001-6\"> </a><a href=\"http://details.loinc.org/LOINC/69001-6.html\">69001-6</a></td><td>Heart rate - standing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-68999-2\"> </a><a href=\"http://details.loinc.org/LOINC/68999-2.html\">68999-2</a></td><td>Heart rate - supine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-40443-4\"> </a><a href=\"http://details.loinc.org/LOINC/40443-4.html\">40443-4</a></td><td>Heart rate - resting</td></tr></table></div>"
       },
-      "url" : "https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions",
-      "version" : "0.2.0",
-      "name" : "IheFooBarBloodPressurePositions",
-      "title" : "The methods of measurement for blood pressure",
       "status" : "active",
-      "date" : "2021-01-22T15:27:52-06:00",
-      "publisher" : "IHE International - [Some] domain Group",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "other",
-          "value" : "some url"
-        }]
-      }],
-      "description" : "These are the loinc body positions that IHE FooBar supports on blood pressure.",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
       "expansion" : {
-        "identifier" : "urn:uuid:bfc6cb72-b4e8-4ab4-b1b2-c360600b5091",
-        "timestamp" : "2021-01-22T15:28:35-06:00",
-        "total" : 4,
+        "identifier" : "urn:uuid:c7d4cdcc-a7f6-49f7-bf92-64ea0b9c50b5",
+        "timestamp" : "2021-01-22T21:28:36.630Z",
         "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
           "name" : "limitedExpansion",
           "valueBoolean" : true
         },
@@ -86,7 +60,7 @@
       "version" : "0.2.0",
       "name" : "ValuesetBirthsex",
       "status" : "active",
-      "date" : "2021-01-22T15:27:52-06:00",
+      "date" : "2021-01-26T12:03:47-06:00",
       "publisher" : "IHE International - [Some] domain Group",
       "contact" : [{
         "telecom" : [{
@@ -101,8 +75,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f5b1a8e7-f46e-46d7-a913-ac9c3117ce54",
-        "timestamp" : "2021-01-22T15:28:36-06:00",
+        "identifier" : "urn:uuid:61962809-ea42-4d14-8254-e68fbac8fcce",
+        "timestamp" : "2021-01-26T12:04:36-06:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

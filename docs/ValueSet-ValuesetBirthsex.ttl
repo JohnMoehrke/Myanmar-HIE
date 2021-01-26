@@ -16,7 +16,7 @@
   fhir:ValueSet.version [ fhir:value "0.2.0"];
   fhir:ValueSet.name [ fhir:value "ValuesetBirthsex"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-01-22T15:27:52-06:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-01-26T12:03:47-06:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "IHE International - [Some] domain Group"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -2,8 +2,8 @@
 =========================================
 
 err = 50, warn = 9, info = 1
-IG Publisher Version: 1.1.56 Out of date - current version is 1.1.58
-Generated Fri Jan 22 15:29:25 CST 2021. FHIR version 4.0.1 for example.fhir.uv.ihe-supplement#0.2.0 (canonical = http://ihe.net/fhir/uv/ihe-supplement)
+IG Publisher Version: 1.1.56 Out of date - current version is 1.1.59
+Generated Tue Jan 26 12:05:33 CST 2021. FHIR version 4.0.1 for example.fhir.uv.ihe-supplement#0.2.0 (canonical = http://ihe.net/fhir/uv/ihe-supplement)
 
  Build Errors : 125 / 9 / 0
  C:\Users\john.moehrke\Git\Myanmar-HIE\fsh-generated\resources\Encounter-example : 0 / 0 / 1
@@ -132,11 +132,11 @@ ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-IHE.FooB
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient-definitions.html#/html/body/div/div/div/p/a at Line 769, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient-examples.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient-mappings.html#/html/body/div/div/div/p/a at Line 396, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient.html#/html/body/div/div/div/p/a at Line 811, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient.html#/html/body/div/div/div/p/a at Line 817, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient.profile.history.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient.profile.json.html#/html/body/div/div/div/p/a at Line 2546, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2248, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2352, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\StructureDefinition-MyanmarPatient.profile.xml.html#/html/body/div/div/div/p/a at Line 2363, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\ValueSet-ValuesetBirthsex.change.history.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\ValueSet-ValuesetBirthsex.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\ValueSet-ValuesetBirthsex.json.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
@@ -148,7 +148,7 @@ ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\ValueSet-ihe-foobar-blood-pr
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\ValueSet-ihe-foobar-blood-pressure-positions.ttl.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\ValueSet-ihe-foobar-blood-pressure-positions.xml.html#/html/body/div/div/div/p/a at Line 290, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\a_issues.html#/html/body/div/div/div/p/a at Line 216, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
-ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\artifacts.html#/html/body/div/div/div/p/a at Line 403, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
+ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\artifacts.html#/html/body/div/div/div/p/a at Line 414, column 28: The link 'some url' for "IHE International - [Some] domain Group" cannot be resolved
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 207, column 12: The link '2_actors_and_transactions.html#client' for "Client" cannot be resolved (valid targets: 26 targets)
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\domain-Y.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 211, column 12: The link '2_actors_and_transactions.html#server' for "Server" cannot be resolved (valid targets: 26 targets)
 ERROR: C:\Users\john.moehrke\Git\Myanmar-HIE\output\domain-Y.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 45: The link 'IHE.FooBar.Client.html' for "Client" cannot be resolved

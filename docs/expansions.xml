@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="afbff044-5afa-4941-aa31-11ec07a551e8"/>
+  <id value="b43c4ce2-24b5-4a85-906d-c53ea1b20a05"/>
   <meta>
-    <lastUpdated value="2021-01-22T15:27:52.165-06:00"/>
+    <lastUpdated value="2021-01-26T12:03:47.361-06:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions"/>
     <resource>
       <ValueSet>
-        <id value="ihe-foobar-blood-pressure-positions"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -59,34 +57,10 @@
             </table>
           </div>
         </text>
-        <url value="https://profiles.ihe.net/myanmar/ValueSet/ihe-foobar-blood-pressure-positions"/>
-        <version value="0.2.0"/>
-        <name value="IheFooBarBloodPressurePositions"/>
-        <title value="The methods of measurement for blood pressure"/>
         <status value="active"/>
-        <date value="2021-01-22T15:27:52-06:00"/>
-        <publisher value="IHE International - [Some] domain Group"/>
-        <contact>
-          <telecom>
-            <system value="other"/>
-            <value value="some url"/>
-          </telecom>
-        </contact>
-        <description value="These are the loinc body positions that IHE FooBar supports on blood pressure."/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bfc6cb72-b4e8-4ab4-b1b2-c360600b5091"/>
-          <timestamp value="2021-01-22T15:28:35-06:00"/>
-          <total value="4"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
+          <identifier value="urn:uuid:c7d4cdcc-a7f6-49f7-bf92-64ea0b9c50b5"/>
+          <timestamp value="2021-01-22T21:28:36.630Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
@@ -181,7 +155,7 @@
         <version value="0.2.0"/>
         <name value="ValuesetBirthsex"/>
         <status value="active"/>
-        <date value="2021-01-22T15:27:52-06:00"/>
+        <date value="2021-01-26T12:03:47-06:00"/>
         <publisher value="IHE International - [Some] domain Group"/>
         <contact>
           <telecom>
@@ -196,8 +170,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f5b1a8e7-f46e-46d7-a913-ac9c3117ce54"/>
-          <timestamp value="2021-01-22T15:28:36-06:00"/>
+          <identifier value="urn:uuid:61962809-ea42-4d14-8254-e68fbac8fcce"/>
+          <timestamp value="2021-01-26T12:04:36-06:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

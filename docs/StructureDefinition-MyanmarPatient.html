@@ -222,7 +222,7 @@
  <tr><td>Version:</td><td>0.2.0</td></tr>
  <tr><td>Name:</td><td>MyammarPatient</td></tr>
  <tr><td>Title:</td><td>Constraints for Myanmar Patient</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-01-22T15:27:52-06:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-01-26T12:03:47-06:00</td></tr>
  <tr><td>Definition:</td><td><p>As a specific requirement, the IPS patient data model will be extended to mandate the following to be persisted, and required if known:</p>
 <p>Patient’s full legal name, date of birth, place of birth, and sex at birth (stored in the gender element)</p>
 <p>Existing ID numbers (e.g. national ID number, driving license number, local clinic ID number(s), etc., where available)</p>
@@ -230,6 +230,12 @@
 <p>As a mandatory CR behaviour, the patient.id shall be a globally unique ID (GUID) and the “MOH-assigned” unique health ID shall be of the format 1NN-NNN-NNNN-C where N is an integer and C is a checksum digit. This MOH-assigned ID shall be persisted in the patient.identifier element with MOH denoted as the assigning authority. For context, it is expected that the MOH-assigned identifier would match the identifier (e.g. barcoded unique ID) that appears on a health card where these may be issued by MOH.</p>
 <p>In cases where a unique ID is established for an individual but no ID card is issued at the time of establishing the ID, the patient.id (the GUID) shall be persisted as the patient.identifier. This temporary patient.identifier shall be overwritten by the MOH-issued unique ID at the time a card is issued to the individual. This behaviour is intended to support situations where persons need to be set up with a unique ID but where it is not possible to issue them a card at the time their demographic record is created.</p>
 <p>The CR shall also maintain and persist any and all locally-assigned IDs in the patient.identifier element (e.g. a locally unique medical records number created by a care facility). In these cases, the assigning authority shall be identified using the MOH-assigned care delivery organization’s org ID. These org IDs shall match valid organization.id records (see ILR-FR, below).</p>
+<p>TODO: not yet based on IPS flavor of Patient</p>
+<p>TODO: place of birth does have a FHIR core extension we could use extension-patient-birthplace</p>
+<p>TODO: sex at birth is not appropriate in .gender. There is not a known extension. So could create an extension here for regional use</p>
+<p>TODO patient's mother's full legal name -- there is an extension that could have been used http://hl7.org/fhir/extension-patient-mothersmaidenname.html
+but the text indicates that patient.link.other is used and that it points at a RelatedPerson. Given that RelatedPerson is not part of PMIR, the addition of RelatedPerson would be an extension on PMIR.  so unclear direction should go.</p>
+<p>TODO: do not have a slice constraint forcing the MOH identifier</p>
 </td></tr>
  <tr><td>Publisher:</td><td>IHE International - [Some] domain Group</td></tr>
  <tr><td>Source Resource:</td><td><a href="StructureDefinition-MyanmarPatient.profile.xml.html">XML</a> / <a href="StructureDefinition-MyanmarPatient.profile.xml.html">JSON</a> / <a href="StructureDefinition-MyanmarPatient.profile.xml.html">Turtle</a></td></tr>
@@ -801,8 +807,8 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="214b90d6-cc35-49fe-8868-b6b7d47a0808">​</a>
-          IG &copy; 2019+ <a style="color: #81BEF7" href="some url">IHE International - [Some] domain Group</a>.  Package example.fhir.uv.ihe-supplement#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 22, 2021 15:27-0600">2021-01-22</span>
+        <p><a name="ea01a1cc-d42a-40a4-b82e-b8a7ffe7d884">​</a>
+          IG &copy; 2019+ <a style="color: #81BEF7" href="some url">IHE International - [Some] domain Group</a>.  Package example.fhir.uv.ihe-supplement#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 26, 2021 12:03-0600">2021-01-26</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
